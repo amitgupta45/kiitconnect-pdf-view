@@ -1,0 +1,42 @@
+
+{
+  "name": "secure-pdf-viewer",
+  "version": "1.0.0",
+  "description": "A feature-rich, secure PDF viewer component for React applications with TypeScript support",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "pdf",
+    "viewer",
+    "secure",
+    "typescript"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "@wojtekmaj/react-hooks": ">=1.0.0",
+    "react-pdf": ">=5.0.0",
+    "pdfjs-dist": ">=3.0.0",
+    "framer-motion": ">=5.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/secure-pdf-viewer"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/secure-pdf-viewer/issues"
+  },
+  "homepage": "https://github.com/yourusername/secure-pdf-viewer#readme"
+}

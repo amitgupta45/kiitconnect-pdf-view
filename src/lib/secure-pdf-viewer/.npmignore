@@ -1,0 +1,6 @@
+
+node_modules
+.DS_Store
+rollup.config.js
+tsconfig.json
+*.tgz

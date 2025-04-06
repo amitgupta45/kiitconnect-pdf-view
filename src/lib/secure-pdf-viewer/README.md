@@ -15,13 +15,19 @@ A feature-rich, secure PDF viewer component for React applications with TypeScri
 ## Installation
 
 ```bash
+npm install secure-pdf-viewer
+```
+
+This library has peer dependencies that you need to install:
+
+```bash
 npm install @wojtekmaj/react-hooks react-pdf pdfjs-dist framer-motion
 ```
 
 ## Usage
 
 ```tsx
-import SecurePdfViewer from './lib/secure-pdf-viewer';
+import SecurePdfViewer from 'secure-pdf-viewer';
 
 const MyPdfViewer = () => {
   return (

@@ -270,7 +270,6 @@ const SecurePdfViewer: React.FC<SecurePdfViewerProps> = ({
                   key={`page_${index + 1}`}
                   ref={el => pageRefs.current[index] = el}
                   className="w-full"
-                  // Removed onMouseEnter event handler that was causing flickering
                 >
                   <PageContent 
                     pageNumber={index + 1} 
@@ -290,35 +289,37 @@ const SecurePdfViewer: React.FC<SecurePdfViewerProps> = ({
       </div>
 
       {/* Styles for watermark, which will be injected into each page */}
-      <style jsx global>{`
-        .page-watermark {
-          position: absolute;
-          inset: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 4rem;
-          font-weight: bold;
-          color: rgba(160, 160, 160, 0.2);
-          pointer-events: none;
-          user-select: none;
-          transform: rotate(-30deg);
-          z-index: 10;
-          text-align: center;
-        }
-        
-        .page-container {
-          position: relative;
-          background-color: ${styles.pageBackgroundColor};
-        }
-        
-        .page-overlay {
-          position: absolute;
-          inset: 0;
-          pointer-events: none;
-          z-index: 5;
-        }
-      `}</style>
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          .page-watermark {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            font-weight: bold;
+            color: rgba(160, 160, 160, 0.2);
+            pointer-events: none;
+            user-select: none;
+            transform: rotate(-30deg);
+            z-index: 10;
+            text-align: center;
+          }
+          
+          .page-container {
+            position: relative;
+            background-color: ${styles.pageBackgroundColor};
+          }
+          
+          .page-overlay {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 5;
+          }
+        `
+      }} />
     </div>
   );
 };
