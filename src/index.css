@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +99,20 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom styles for PDF Viewer */
+.react-pdf__Document {
+  width: 100%;
+}
+
+.react-pdf__Page {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.react-pdf__Page__annotations {
+  display: none;
 }
