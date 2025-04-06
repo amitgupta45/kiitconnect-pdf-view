@@ -4,3 +4,9 @@ node_modules
 rollup.config.js
 tsconfig.json
 *.tgz
+.vscode
+.idea
+coverage
+tests
+examples
+src

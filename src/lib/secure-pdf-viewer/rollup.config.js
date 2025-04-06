@@ -36,5 +36,5 @@ export default {
     }),
     terser()
   ],
-  external: ['react', 'react-dom', '@wojtekmaj/react-hooks', 'react-pdf', 'pdfjs-dist', 'framer-motion']
+  external: ['react', 'react-dom', '@wojtekmaj/react-hooks', 'react-pdf', 'pdfjs-dist', 'framer-motion', 'lucide-react']
 };

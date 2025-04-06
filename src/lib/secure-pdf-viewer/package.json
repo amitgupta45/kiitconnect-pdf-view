@@ -27,7 +27,8 @@
     "@wojtekmaj/react-hooks": ">=1.0.0",
     "react-pdf": ">=5.0.0",
     "pdfjs-dist": ">=3.0.0",
-    "framer-motion": ">=5.0.0"
+    "framer-motion": ">=5.0.0",
+    "lucide-react": ">=0.400.0"
   },
   "author": "Your Name",
   "license": "MIT",
